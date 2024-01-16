@@ -1,5 +1,7 @@
 package br.com.exercicio.to_do_list.to_do_list.Controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -34,7 +36,7 @@ public class MainController {
     
     // READ
     @GetMapping("")
-    public Iterable<Lista> getTarefa()
+    public List<Lista> getTarefa()
     {
         return repositorio.findAll();
     }
