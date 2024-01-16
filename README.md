@@ -2,7 +2,7 @@
 
 Este é um simples exemplo de uma API RESTful de uma lista de tarefas (ToDo List) desenvolvida com Spring Boot. O projeto realiza operações CRUD (Create, Read, Update, Delete) em uma entidade `Lista`.
 
-##Endpoints
+## Endpoints
 
 1. Listar todas as tarefas
   Endpoint:
