@@ -4,12 +4,10 @@ Este é um simples exemplo de uma API RESTful de uma lista de tarefas (ToDo List
 
 ## Endpoints
 
-1. Listar todas as tarefas
-  Endpoint:
-    GET /tarefas
+#### 1. Listar todas as tarefas
+     GET /tarefas
    
-3. Criar uma nova tarefa
-  Endpoint:
+#### 3. Criar uma nova tarefa
     POST /tarefas
    
     Corpo da Requisição:
@@ -19,8 +17,7 @@ Este é um simples exemplo de uma API RESTful de uma lista de tarefas (ToDo List
       "situacao": false
     }
    
-4. Atualizar uma tarefa existente
-  Endpoint:
+#### 4. Atualizar uma tarefa existente
     PUT /tarefas/{id}
    
     Corpo da Requisição:
@@ -30,7 +27,6 @@ Este é um simples exemplo de uma API RESTful de uma lista de tarefas (ToDo List
       "situacao": true
     }
    
-5. Excluir uma tarefa
-  Endpoint:
+#### 5. Excluir uma tarefa
     DELETE /tarefas/{id}
    
