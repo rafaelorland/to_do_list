@@ -1,6 +1,5 @@
 package br.com.exercicio.to_do_list.to_do_list.Controller;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,8 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.exercicio.to_do_list.to_do_list.Model.Lista;
 import br.com.exercicio.to_do_list.to_do_list.Repository.Respository;
-
-
 
 
 @RestController
@@ -35,14 +32,14 @@ public class MainController {
         return savedTask;
     }
     
-    // GET
+    // READ
     @GetMapping("")
     public Iterable<Lista> getTarefa()
     {
         return repositorio.findAll();
     }
 
-    //UPDATE
+    // UPDATE
     @PutMapping("/{id}")
     public Lista updateTarefa(@PathVariable Integer id, @RequestBody Lista tarefa)
     {
@@ -61,7 +58,7 @@ public class MainController {
         return null;
     }
 
-    //DELETE in ID
+    // DELETE in ID
     @DeleteMapping("/{id}")
     public Lista deletarTarefaid(@RequestParam Integer id)
     {
